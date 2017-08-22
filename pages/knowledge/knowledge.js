@@ -59,6 +59,7 @@ Page({
   // 点赞文章
   likeBtn: function (ev) {
     var that = this;
+    //alert(ev);
     var idx = ev.currentTarget.dataset.inx;
     // app.getUserInfo(function () {
       wx.request({

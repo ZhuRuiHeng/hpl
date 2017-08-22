@@ -1,7 +1,5 @@
 {
   "pages": [
-    
-    
     "pages/index/index",
     "pages/ercode/ercode",
     "pages/heChart/heChart",
@@ -33,7 +31,9 @@
     "pages/shareHot/shareHot",
     "pages/friendHot/friendHot",
     "pages/goldnote/goldnote",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/image/image",
+    "pages/city/city"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -59,7 +59,7 @@
         "selectedIconPath": "pages/img/home_icon_beauti_hover.png"
       },
       {
-        "pagePath": "javascript:;",
+        "pagePath": "pages/image/image",
         "text": "禾圈",
         "iconPath": "pages/img/home_icon_beauti.png",
         "selectedIconPath": "pages/img/home_icon_beauti_hover.png"
@@ -77,5 +77,6 @@
         "selectedIconPath": "pages/img/home_icon_mine_hover.png"
       }
     ]
-  }
+  },
+  "debug": true
 }

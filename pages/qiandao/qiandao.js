@@ -79,7 +79,7 @@ Page({
             console.log(goldImg[i].static)
             var ind = i;
             console.log(goldImg);
-            setTimeout( function(){
+            setTimeout( function(){ 
               var goldImg = that.data.goldImg;
               goldImg[ind].static = "none";
               that.setData({
@@ -116,6 +116,7 @@ Page({
     //wx.clearStorage();
     var that = this;
     var sign = app.data.sign;
+    //console.log('sign:'+sign);
     var mydate = new Date();
     var year = mydate.getFullYear();
     var month = mydate.getMonth() + 1;
@@ -233,7 +234,7 @@ Page({
       common.toShare();
     },
 
-  // 弹窗
+  // 弹窗金币数说明
   helpCoins: function() {
     var that = this;
     that.setData({

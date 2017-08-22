@@ -55,7 +55,7 @@
     <view wx:for="{{monthDaySize-date}}">{{item+date+1}}</view>
   </view>
 </view>
-<!-- 弹窗 -->
+<!--金币获取方式 弹窗 -->
 <view class="help_win" wx:if="{{helpWin}}">
     <view class="help_win_in">
         <view class="help_title">金币获取方式<view bindtap="close_help" class="close_help"></view></view>
