@@ -1,0 +1,51 @@
+/* pages/writeDyn/writeDyn.wxss */
+.container{
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	font-size: 30rpx;
+	box-sizing: border-box;
+	padding: 28rpx;
+}
+
+.container textarea{
+	display: block;
+	min-height: 300rpx;
+	background: #f4f4f4;
+	width: 100%;
+	font-size: 36rpx;
+	line-height: 1.3rpx;
+	margin-top: 30rpx;
+	box-sizing: border-box;
+	padding: 28rpx;
+}
+
+.container form{
+	width: 100%;
+}
+
+.upfile_btn{
+	display: block;
+	width: 146rpx;
+	height: 146rpx;
+}
+
+.upfile_box{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.upfile_box image{
+	margin: 5rpx;
+}
+
+.send_btn{
+	margin-top: 40rpx;
+	width: 640rpx;
+}
+
+.tip_text{
+	box-sizing: border-box;
+	padding: 20rpx 0;
+}

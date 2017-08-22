@@ -1,0 +1,191 @@
+/**index.wxss**/
+@import "../template/template.wxss";
+.container{
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	font-size: 30rpx;
+	background: #336060;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.logo{
+	width: 750rpx;
+	height: 205rpx;
+}
+
+.logo image{
+	display: block;
+	width: 750rpx;
+	height: 205rpx;
+	-webkit-box-shadow:0px 10px 20px #336060;
+	box-shadow:0px 10px 20px #336060;
+}
+
+.contact_me{
+	width: 750rpx;
+	background: transparent;
+	box-sizing: border-box;
+	position: relative;
+	height: 140rpx;
+	border:1px solid red;
+	overflow: hidden;
+}
+
+.content_box{
+	position: relative;
+}
+
+.contact_me button{
+	background: transparent;
+	opacity: 0;
+}
+
+.ask_bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 750rpx;
+	height: 140rpx;
+	z-index: 1;
+	background: #fff;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items:center;
+}
+
+.img_box{
+	margin-right: 42rpx;
+}
+
+.img_box image{
+	display: block;
+	width: 62rpx;
+	height: 58rpx;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.ask_icon{
+	width: 140rpx;
+	height: 140rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	box-sizing: border-box;
+	padding-top: 40rpx;
+}
+
+.ask_time{
+	font-size: 20rpx;
+	line-height: 40rpx;
+}
+
+.ask_mine{
+	position: absolute;
+	width: 100%;
+	height:140rpx;
+	line-height: 140rpx;
+	border-radius: 0rpx;
+	z-index: 2;
+}
+
+.hot_img{
+	width: 47rpx;
+	height: 48rpx;
+	position: absolute;
+	right: 0;
+	margin-top: -20rpx;
+}
+
+.ask_right{
+	position: relative;
+	width: 324rpx;
+}
+
+.ask_right view:nth-of-type(1){
+	font-size: 34rpx;
+	text-align: left;
+	margin-top: 6rpx;
+	margin-bottom: 18rpx;
+}
+
+.ask_right view:nth-of-type(2){
+	font-size: 24rpx;
+	text-align: left;
+	margin-bottom: 14rpx;
+}
+
+.ask_text{
+	font-size: 30rpx;
+	text-align: left;
+	line-height: 40rpx;
+}
+
+.home_btn{
+	width: 750rpx;
+	padding: 62rpx 0;
+	box-sizing: border-box;
+	/*justify-content: space-between;
+	display: flex;*/
+	/*flex-wrap: wrap;*/
+	background: #336060;
+}
+
+.home_btn .navitor{
+	display: block;
+	width: 392rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	border-radius: 45rpx;
+	margin: 30rpx auto;
+	padding:0;
+	font-size: 34rpx;
+	position: relative;
+	text-align: center;
+	box-sizing: content-box;
+  cursor: pointer;
+  color:#fff;
+  background: -webkit-linear-gradient(-90deg, #10ca98 0, #0ba178 100%);
+  background: linear-gradient(180deg, #10ca98 0, #0ba178 100%);
+  background-position: 50% 50%;
+  -webkit-box-shadow: 0 1px 8px 2px rgba(0,0,0,0.2);
+}
+
+.home_btn .navitor image{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+}
+
+.team_img{
+	display: block;
+	width: 750rpx;
+	height: 353rpx;
+}
+
+.team_pingpai{
+	display: block;
+	width: 750rpx;
+	height: 389rpx;
+	margin: 0 auto;
+	margin-top: 20rpx;
+}
+
+.teacher{
+	border-top: 30rpx solid #336060;
+}
+
+.teach_recom{
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	color: #fff;
+	padding:40rpx;
+	justify-content: space-between;
+}

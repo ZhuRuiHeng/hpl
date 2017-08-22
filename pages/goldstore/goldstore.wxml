@@ -1,0 +1,38 @@
+<import src="../template/template.wxml"/>
+<view class="container">
+  <swiper class="swiper" autoplay="{{autoplay}}" interval="{{interval}}" current="{{swiperCurrent}}" duration="{{duration}}" bindchange="swiperChange">
+    <block wx:for="{{swiperTab}}">
+      <swiper-item>
+        <view class="shop_img">
+          <swiper class="productIm" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block>
+              <swiper-item wx:for="{{item.img}}" wx:for-item="img">
+                 <image src="{{img}}" class="slide-image" />
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+        <view>
+          <view class="shop_title">{{item.prod_name}}</view>
+          <view class="shop_tip">{{item.description}}</view>
+        </view>
+        <view>
+          <!-- <view class="shop_price">${{item.price}}</view> -->
+          <view class="shop_gold">金币{{item.coins}}</view>
+        </view>
+        <view class="mine_coins">我的金币：{{coins}}</view>
+        <view class="exchenge_btn" bindtap="check" data-price="{{item.coins}}">立即兑换</view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 切换标识圆点 -->
+  <view class="dots">
+    <block wx:for="{{swiperTab}}">
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+    </block>
+  </view>
+<!-- 切换箭头 -->
+<view class="img_pre" bindtap="imgPre"></view>
+<view class="img_next" bindtap="imgNext"></view>
+<template is="share_icon"/>
+</view>

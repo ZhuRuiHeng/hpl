@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<import src="../template/template.wxml"/>
+<scroll-view scroll-y="true" class="container">
+   <view class="logo"><image src="../img/logo.png"></image></view>
+   <!-- 按钮区 -->
+   <view class="home_btn">
+       <vies class="test_btn navitor" bindtap="skinTest" data-page="skinTest" hover-class="none">肌肤测试</vies>
+       <!-- <vies class="apply_btn navitor"  bindtap="Apply"  data-page="Apply" hover-class="none">申请试用</vies> -->
+       <vies class="join_btn navitor" bindtap="joinVip"  data-page="joinVip" hover-class="none">加入会员</vies>
+       <vies class="check_btn navitor"  bindtap="Check"  data-page="Check" hover-class="none">护肤打卡</vies>
+   </view>
+<view class="content_box">
+   <view class="contact_me" >
+      <button class="ask_mine navitor1" wx:if="{{!content}}" data-page="ask_me" bindtap="toLogin" hover-class="none">在线咨询</button>
+        <button class="ask_mine navitor2" wx:elif="{{teach_static}}" open-type="contact" hover-class="none">在线咨询</button>
+        <button class="ask_mine navitor3" wx:else="" open-type="contact" hover-class="none">在线咨询</button>
+    </view>
+    <view class="ask_bg">
+        <view class="img_box">
+            <image src="../img/home_icon_ask.png"></image>
+            <text class="ask_time">10:00-18:00</text>
+        </view>
+        <view class="ask_right">
+             <image class="hot_img" src="../img/home_icon_askhot.gif"></image>
+             <view>在线咨询肌肤问题</view>
+             <view>1000名专业护肤老师在线解答</view>
+        </view>
+    </view>
+</view>
+   <!-- 公司团队 -->
+   <image class="team_pingpai" src="https://hepulan-skin-care-center.omnistatic.com/static/home_pingpai.png"></image>
+   <!-- 老师推荐 -->
+   <navigator class="teacher" bindtap="teacheRed">
+    <image class="team_img" src="https://hepulan-skin-care-center.omnistatic.com/static/home_team.png"></image>
+   <view class="teach_recom"><view></view>点击>>进入老师推荐页面</view></navigator>
+<template is="share_icon"/>
+<!-- 已有护肤老师弹窗 -->
+<block wx:for="{{templateData}}">
+    <template wx:if="{{copyTeach}}" is="teachInfo" data="{{...item}}"/>
+</block>
+</scroll-view>
