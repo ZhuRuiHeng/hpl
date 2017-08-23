@@ -15,6 +15,7 @@ Page({
       withShareTicket: true
     })
     var that = this;
+    //列表页传来的id
     var idx = options.id;
     var loginData = app.data.loginData;
     wx.request({

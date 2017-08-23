@@ -33,7 +33,8 @@
     "pages/goldnote/goldnote",
     "pages/logs/logs",
     "pages/image/image",
-    "pages/city/city"
+    "pages/city/city",
+    "pages/knowledge2/knowledge2"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -59,7 +60,7 @@
         "selectedIconPath": "pages/img/home_icon_beauti_hover.png"
       },
       {
-        "pagePath": "pages/image/image",
+       "pagePath": "pages/knowledge2/knowledge2",
         "text": "禾圈",
         "iconPath": "pages/img/home_icon_beauti.png",
         "selectedIconPath": "pages/img/home_icon_beauti_hover.png"

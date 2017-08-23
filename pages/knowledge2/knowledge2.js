@@ -32,7 +32,6 @@ Page({
       }
     });
     // 获取整个知识列表
-    //console.log('https://hepulan-skin-care-center.omnistatic.com/site/get-knowledge-list?sign=' + app.data.sign);
     wx.request({
       url: 'https://hepulan-skin-care-center.omnistatic.com/site/get-knowledge-list?sign=' + app.data.sign,
       header: {
@@ -76,7 +75,6 @@ Page({
               main_content[i].thumb_num = parseInt(main_content[i].thumb_num) + 1;
             }
           }
-          //添加数据
           that.setData({
             main_content: main_content
           })
@@ -189,7 +187,6 @@ Page({
   onReachBottom: function() {
     var that = this;
     var oldCentent = that.data.main_content;
-    console.log("oldCentent:" + oldCentent);
     var contentTip = [];
     var oldPage = that.data.page;
     var reqPage = oldPage + 1;
@@ -221,8 +218,7 @@ Page({
         var newContent = oldCentent.concat(contentTip);
         that.setData({
           "main_content": newContent
-        });
-        console.log("newContent:" + newContent)
+        })
       },
     });
   },
